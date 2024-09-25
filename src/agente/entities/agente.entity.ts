@@ -1,3 +1,5 @@
+import { Cita } from "src/cita/entities/cita.entity";
+import { Empresa } from "src/empresa/entities/empresa.entity";
 import {
     Entity,
     PrimaryGeneratedColumn,
@@ -5,8 +7,7 @@ import {
     ManyToOne,
     OneToMany,
   } from "typeorm";
-  import { Empresa } from "./empresa.entity";
-  import { Cita } from "./cita.entity";
+
   
   @Entity()
   export class Agente {

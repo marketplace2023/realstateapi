@@ -5,8 +5,8 @@ import {
     ManyToOne,
     OneToMany,
   } from "typeorm";
-  import { ImagenVideo } from "./imagen-video.entity";
 import { Empresa } from "src/empresa/entities/empresa.entity";
+import { ImagenVideo } from "src/imagenvideo/entities/imagenvideo.entity";
   
   @Entity()
   export class Propiedad {

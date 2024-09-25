@@ -35,7 +35,7 @@ export class Empresa {
   sitio_web: string;
 
   @Column()
-  horario: string[];
+  horario: string;
 
   @Column()
   slogan: string;
