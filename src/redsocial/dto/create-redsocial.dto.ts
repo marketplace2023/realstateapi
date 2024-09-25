@@ -1,12 +1,12 @@
 import { IsString } from 'class-validator';
 import { Empresa } from 'src/empresa/entities/empresa.entity';
 
-export class CreateTestimonioDto {
+export class CreateRedSocialDto {
   @IsString()
-  nombre_cliente: string;
+  nombre_red_social: string;
 
   @IsString()
-  comentario: string;
+  url_perfil: string;
 
   empresa: Empresa; // Relación con la entidad Empresa
 }

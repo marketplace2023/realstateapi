@@ -1,5 +1,13 @@
 import { Agente } from "src/agente/entities/agente.entity";
+import { Backlink } from "src/backlink/entities/backlink.entity";
+import { Citacion } from "src/citacion/entities/citacion.entity";
+import { ImagenVideo } from "src/imagenvideo/entities/imagenvideo.entity";
+import { MetodoPago } from "src/metodopago/entities/metodopago.entity";
+import { Propiedad } from "src/propiedad/entities/propiedad.entity";
+import { RedSocial } from "src/redsocial/entities/redsocial.entity";
+import { SEOOptimizacion } from "src/seooptimizacion/entities/seooptimizacion.entity";
 import { Servicio } from "src/servicio/entities/servicio.entity";
+import { Testimonio } from "src/testimonio/entities/testimonio.entity";
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from "typeorm";
 
 
@@ -67,9 +75,6 @@ export class Empresa {
     (seoOptimizacion) => seoOptimizacion.empresa
   )
   seoOptimizaciones: SEOOptimizacion[];
-
-  @OneToMany(() => PlataformaNAP, (plataformaNAP) => plataformaNAP.empresa)
-  plataformasNAP: PlataformaNAP[];
 
   @OneToMany(() => Citacion, (citacion) => citacion.empresa)
   citaciones: Citacion[];

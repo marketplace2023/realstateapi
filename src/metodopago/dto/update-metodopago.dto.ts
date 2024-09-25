@@ -1,17 +1,13 @@
 import { PartialType } from '@nestjs/mapped-types';
-import { CreateTestimonioDto } from './create-testimonio.dto';
 import { IsString, IsOptional } from 'class-validator';
+import { CreateMetodoPagoDto } from './create-metodopago.dto';
 import { Empresa } from 'src/empresa/entities/empresa.entity';
 
-export class UpdateTestimonioDto extends PartialType(CreateTestimonioDto) {
+export class UpdateMetodoPagoDto extends PartialType(CreateMetodoPagoDto) {
 
     @IsOptional()
     @IsString()
-    nombre_cliente?: string;
-  
-    @IsOptional()
-    @IsString()
-    comentario?: string;
+    nombre_metodo_pago?: string;
   
     @IsOptional()
     empresa?: Empresa;
