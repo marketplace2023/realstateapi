@@ -1,5 +1,5 @@
-import { Empresa } from "src/empresa/entities/empresa.entity";
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from "typeorm";
+import { Empresa } from 'src/empresa/entities/empresa.entity';
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
 
 @Entity()
 export class Citacion {
